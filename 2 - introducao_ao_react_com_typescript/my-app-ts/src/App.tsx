@@ -12,6 +12,7 @@ import {
   InputLeftElement,
 } from "@chakra-ui/react";
 import { EmailIcon, LockIcon } from "@chakra-ui/icons";
+import { login } from "./services/login/login";
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
             </VStack>
 
             <Button
+              onClick={login}
               colorScheme="purple"
               size="lg"
               w="100%"
