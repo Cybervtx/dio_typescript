@@ -43,6 +43,11 @@ export const Card = () => {
       boxShadow="2xl"
     >
       <VStack spacing={6}>
+        { 
+          userData === null || userData === undefined ? 
+          <h1>Loading ...</h1> :
+          <h1>Informações carregadas</h1>
+        }
         <Heading
           as="h1"
           size={{ base: "lg", md: "xl" }}
