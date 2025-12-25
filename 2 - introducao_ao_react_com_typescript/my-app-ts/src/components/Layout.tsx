@@ -4,15 +4,9 @@ import { Header } from "./Header/Header";
 
 export const Layout = ({ children }: any) => {
   return (
-    <>
+    <Box minHeight="100vh" backgroundColor={"#9413dc"}>
       <Header texto="Dio Bank" />
-      <Center
-        minH="100vh"
-        bg="linear-gradient(135deg, #9413dc 0%, #6b0f9e 100%)"
-        p={{ base: 4, md: 8 }}
-      >
-        {children}
-      </Center>
-    </>
+      {children}
+    </Box>
   );
 };
