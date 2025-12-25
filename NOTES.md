@@ -1,4 +1,5 @@
-## Comandos Iniciais
+## Fundamentos do Typescipt
+
 ```bash
 # iniciar o projeto
 npm init -y
@@ -36,7 +37,10 @@ npm run dev
 }
 ```
 
-## Fundamentos
+## Introdução ao react com TypeScript
+
 ```bash
+# Iniciar uma aplicaçao em react
+npx create-react-app my-app-ts --template typescript
 
 ```
