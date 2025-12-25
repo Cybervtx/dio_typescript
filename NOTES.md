@@ -43,4 +43,13 @@ npm run dev
 # Iniciar uma aplicaçao em react
 npx create-react-app my-app-ts --template typescript
 
+# instalar o styled components
+npm i styled-components
+npm i --save-dev @types/styled-components
+
+# instalando componete visual do chakra versao 2
+npm i @chakra-ui/react @emotion/react
+
+# instala o icones
+npm install @chakra-ui/icons
 ```

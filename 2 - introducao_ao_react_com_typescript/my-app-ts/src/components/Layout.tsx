@@ -1,13 +1,13 @@
 import { Footer } from "./Footer"
-import { Header } from "./Header"
+import { Header } from "./Header/Header"
 
 
 export const Layout = ({children}:any) => {
     return(
         <>
-        <Header texto="Curso Typescript" />
+        <Header texto="Dio Bank" />
         {children}
-        <Footer texto="By Software Engineer" />
+        <Footer texto="By Diogo Caldas" />
         </>
     )
 }
