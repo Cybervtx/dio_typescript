@@ -1,8 +1,9 @@
 import { Center, SimpleGrid, Spinner } from "@chakra-ui/react";
 import { CardInfo } from "../components/CardInfo";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { api } from "../api";
 import {useNavigate, useParams} from 'react-router-dom';
+import { AppContext } from "../components/AppContext";
 
 interface UserData {
   email: string;
@@ -14,6 +15,13 @@ interface UserData {
 
 export const Conta = () => {
   const [userData, setUserData] = useState<UserData | null>();
+  const actualDate = new Date();
+  const {id} = useParams();
+  const navigate = useNavigate();
+
+  const {isLogedIn} = useContext(AppContext);
+
+  !isLogedIn && navigate('/');
 
   useEffect(() => {
     const getData = async () => {
@@ -23,9 +31,6 @@ export const Conta = () => {
     getData();
   }, []);
 
-  const actualDate = new Date();
-  const {id} = useParams();
-  const navigate = useNavigate();
   
   if (userData && id !== userData.id) {
     navigate('/');

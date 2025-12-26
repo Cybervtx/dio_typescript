@@ -1,4 +1,4 @@
-import { Box, Center,Text } from "@chakra-ui/react";
+import { Box, Center, Text } from "@chakra-ui/react";
 import "./Header.css";
 
 interface IHeader {
@@ -7,9 +7,9 @@ interface IHeader {
 
 export const Header = ({ texto }: IHeader) => {
   return (
-    <Box backgroundColor={'orange'}>
+    <Box backgroundColor={"orange"}>
       <Center>
-        <Text fontSize={'3xl'} >{texto}</Text>
+        <Text fontSize={"3xl"}>{texto}</Text>
       </Center>
     </Box>
   );
